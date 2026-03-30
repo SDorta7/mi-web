@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Agencia de viajes de Tenerife</title>
+<meta name="description" content="Planifica tus viajes Con nosotros.">
+<link rel="stylesheet" href="../css/styles.css">
+
+<!-- FUENTE PREMIUM -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+<div class="overlay" onclick="toggleMenu()"></div>
+
+
+<div class="sidebar">
+    <a href="../index.html">Inicio</a>
+    <a href="sobre-nosotros.html">Sobre nosotros</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+</div>
+
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<div class="container">
+    <h1>Paquetes turísticos en Canarias</h1>
+
+    <div class="grid">
+
+       <!-- TENERIFE -->
+<div class="card" onclick="openModal(`
+<h2>Tenerife</h2>
+<p><strong>Descripción:</strong> Disfruta de un viaje completo por Tenerife explorando el Teide, playas volcánicas y naturaleza única.</p>
+<p><strong>Duración:</strong> 5 días</p>
+<p><strong>Itinerario:</strong> Parque Nacional del Teide, Los Gigantes, Costa Adeje.</p>
+<p><strong>Precio:</strong> Desde 600€</p>
+`)">
+    <img src="../img/tf.jfif" alt=" Puerto de la cruz y el teide">
+    <h3>Tenerife Aventura</h3>
+</div>
+
+<!-- GRAN CANARIA -->
+<div class="card" onclick="openModal(`
+<h2>Gran Canaria</h2>
+<p><strong>Descripción:</strong> Relájate en playas doradas y disfruta del clima perfecto todo el año.</p>
+<p><strong>Duración:</strong> 7 días</p>
+<p><strong>Itinerario:</strong> Dunas de Maspalomas, Puerto Rico, spa.</p>
+<p><strong>Precio:</strong> Desde 800€</p>
+`)">
+    <img src="../img/gc.jfif" alt="Dunas de Maspalomas Gran Canaria">
+    <h3>Gran Canaria Relax</h3>
+</div>
+
+<!-- LANZAROTE -->
+<div class="card" onclick="openModal(`
+<h2>Lanzarotes</h2>
+<p><strong>Descripción:</strong> Explora paisajes volcánicos únicos y arte integrado en la naturaleza.</p>
+<p><strong>Duración:</strong> 4 días</p>
+<p><strong>Itinerario:</strong> Parque Nacional de Timanfaya, Jameos del Agua.</p>
+<p><strong>Precio:</strong> Desde 500€</p>
+`)">
+   <img src="../img/lz.jfif" alt="Parque Nacional de Timanfaya">
+    <h3>Lanzarote Volcanes</h3>
+</div>
+
+<!-- FUERTEVENTURA -->
+<div class="card" onclick="openModal(`
+<h2>Fuerteventura</h2>
+<p><strong>Descripción:</strong> Disfruta de playas de arena blanca y aguas cristalinas ideales para desconectar.</p>
+<p><strong>Duración:</strong> 6 días</p>
+<p><strong>Itinerario:</strong> Corralejo, Isla de Lobos, surf.</p>
+<p><strong>Precio:</strong> Desde 700€</p>
+`)">
+    <img src="../img/fv.jfif" alt="Playas de Corralejo Fuerteventura">
+    <h3>Fuerteventura Playas</h3>
+</div>
+
+    </div>
+</div>
+
+<!-- MODAL CORREGIDO -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" style="cursor:pointer; float:right; font-size:20px;">✖</span>
+        <div id="modal-text"></div>
+    </div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
